@@ -1,0 +1,182 @@
+@media(max-width: 1000px){
+    .gallery .img{
+        width: calc(100% / 3);
+    }
+
+    header{
+        padding: 10px 40px;
+    }
+    .visit{
+        margin: 0 30px;
+    }
+    .section-text{
+        margin-right: 90px;
+        margin-top: 500px;
+    }
+    .about{
+        padding: 20px 50px;
+        height: 100vh;
+    }
+
+    .culture{
+        padding: 20px 30px;
+    }
+
+
+}
+
+@media(max-width: 700px){
+    .gallery .img{
+        width: calc(100% / 2);
+    }
+    header nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        right: 0;
+        top: 100px;
+        background: linear-gradient(45deg,  #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        width: 100%;
+        min-height: 25%;
+        text-align: center;
+    }
+
+    .meun{
+        display: block;
+        margin-right: 30px;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 2px 10px;
+    }
+    #close{
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .section-text{
+        margin: 0 30px;    
+    }
+    .section-text h1, .section-text h2{
+        font-size: 28px;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 100px;
+        margin-left: 40px;
+    }
+    .btn input{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 700px){
+
+    nav .items{
+        max-width: 600px;
+    }
+    nav .item{
+        padding: 7px 15px;
+    }
+ 
+}
+
+@media(max-width: 600px){
+
+    nav .items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav{
+        top: 70px;
+    }
+
+    nav .item{
+        margin: 5px;
+    }
+    .gallery .img{
+        width: 100%;
+    }
+.logo img{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.section-text{
+    margin-top: 60px;
+}
+
+.section-text input{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.section-text h1{
+    font-size: 30px;
+}
+
+.section-text h2{
+    font-size: 32px;
+}
+
+.visit{
+    margin: 0 20px;
+}
+.visit-text h1{
+    font-size: 30px;
+}
+
+.about, .culture{
+    padding: 0 20px;
+}
+
+.about h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about h2, .culture h2{
+    font-size: 25px;
+}
+
+.about p, .cultrue-text p, .row p{
+    font-size: 14px;
+}
+
+.culture .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.culture img{
+    width: 300px;
+}
+
+ .cultrue-text h1{
+    font-size: 28px;
+    padding-top: 30px;
+ }
+
+ .about {
+    height: 100%;
+ }
+
+.items .item{
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 0 10px 10px ;
+}
+
+}
