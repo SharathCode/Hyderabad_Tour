@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+nav a{
+    color: white;
+}
+
+.logo img{
+    width:70px;
+    height: 70px;
+}
+
+.btn input{
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+video{
+    min-width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+.section-text{
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    position: absolute;
+    z-index: -1;
+    margin-left: 120px;
+}
+.section-text h1::first-letter , .section-text h2::first-letter{
+    color: #e73c7e;
+}
+
+.section-text input{
+    padding: 10px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid white;
+    background: linear-gradient(45deg, #e73c7e , #ee7752);
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.section-text input:hover{
+    background: linear-gradient(45deg, #ee7752, #e73c7e);
+}
+
+/*Visit*/
+
+.visit{
+    padding-top: 60px;
+}
+
+.visit-text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #23a6d5;
+    font-weight: 400;
+}
+
+nav .items{
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+}
+
+nav .item{
+    padding: 7px 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #e73c7e;
+    border: 3px solid #e73c7e;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+
+nav .active, nav .item:hover{
+    color: #fff;
+    background-color: #e73c7e;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .img{
+    width: calc(100% / 4);
+    padding: 10px;
+}
+.gallery img{
+    width: 200px;
+    height: 300px;
+}
+/*JS */
+.gallery .img.hide{
+    display: none;
+}
+.gallery .img.show{
+    display: block;
+}
+/*JS end*/
+
+.gallery .img span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.gallery .img img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+
+.gallery .img:hover img{
+    transform: scale(1.1);
+}
+
+.gallery p{
+    color:#e73c7e;
+    margin-top: 10px;
+}
+
+
+/* About Hyderabd */
+
+.about{
+    padding-top: 60px;
+    background: linear-gradient(40deg, #ee7752, #fff);
+}
+.about h1{
+    font-size: 50px;
+    color:#23a6d5;
+    font-weight: 400;
+}
+.about p{
+    color:rgba(0, 0, 0, 0.71);
+    line-height: 35px;
+}
+
+.about h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #e73c7e;
+}
+
+
+/*Culture*/
+
+.culture{
+    padding-top: 60px;
+    background: linear-gradient(40deg, #ee7752, #fff);
+}
+
+.cultrue-text h1{
+    font-size: 50px;
+    color: #23a6d5;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.cultrue-text p, .row p{
+    line-height: 35px;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 0.71);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.culture h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #e73c7e;
+    margin-top: 20px;
+}
+
+.meun{
+    display: none;
+}
